@@ -17,6 +17,8 @@
         @is-show-modal="(isShowModal) => isShowModalEdit = isShowModal"
         :categoryEdit="categoryEdit"
         @update-title="updateCategory"
+
+
     />
     <header class="header__main">
       <nav>
@@ -59,9 +61,10 @@
       </div>
     </main>
     <footer>
-      <button class="navigation__button"
+      <button class="navigation__button no-select"
               @click.stop="isShowModalCreate = !isShowModalCreate;"
               :style="isShowModalCreate ? 'transform: rotate(45deg)' : '' "
+
       >
         <span class="icon-svg">
           <svg xmlns="http://www.w3.org/2000/svg" width="16.149" height="16.149" viewBox="0 0 16.149 16.149" >

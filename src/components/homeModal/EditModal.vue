@@ -5,8 +5,7 @@
         <h2>Edit Your Categories</h2>
         <input type="text"
                placeholder="Enter Category Name"
-               :value="categoryEdit"
-               @change="(e)=> categoryName = e.target.value "
+               v-model="valueEdit"
         >
         <button @click="handleUpdate">Save !</button>
       </div>
@@ -27,7 +26,7 @@ export default {
   data(){
     return{
       isShowModal : false,
-      categoryName : null
+      valueEdit: this.categoryEdit
     }
   },
   methods :{
@@ -38,7 +37,7 @@ export default {
     handleUpdate(){
       this.isShowModal = false;
       this.$emit('is-show-modal',this.isShowModal)
-      this.$emit('update-title',this.categoryName)
+      this.$emit('update-title',this.valueEdit)
     }
   },
 
