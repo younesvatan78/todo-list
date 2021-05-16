@@ -1,6 +1,6 @@
-# todo-list
+# Todo-list
 
-this is sample project with vue js
+This is a sample project with vue js
 
 ## Project setup
 ```
